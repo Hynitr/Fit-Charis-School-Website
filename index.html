@@ -1,9 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light-style customizer-hide" dir="ltr" data-theme="theme-default" data-assets-path="assets/"
+    data-template="vertical-menu-template-free">
+
 <head>
-	<title>Coming Soon 2</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title> Raising and releasing world-class leaders</title>
+
+    <meta charset="utf-8" />
+    <meta name="title" content="Raising and releasing world-class leaders | Fit-Charis International School" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+    <!--  Social tags      -->
+    <meta name="keywords" content="Books, In vogue, Vogue, PDF, book, soft copies" />
+    <meta name="description" content="Raising and releasing world-class leaders | Fit-Charis International School" />
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Raising and releasing world-class leaders | Fit-Charis International School" />
+    <meta itemprop="description" content="Raising and releasing world-class leaders | Fit-Charis International School" />
+    <meta itemprop="image" content="https://fitcharisschools.com/img/logo.png" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="wearefitcharis" />
+    <meta name="twitter:site" content="@wearefitcharis" />
+    <meta name="twitter:title" content="Raising and releasing world-class leaders | Fit-Charis International School" />
+
+    <meta name="twitter:description" content="Raising and releasing world-class leaders | Fit-Charis International School" />
+    <meta name="twitter:creator" content="@wearefitcharis" />
+    <meta name="twitter:image" content="hhttps://twitter.com/wearefitcharis/photo" />
+
+    <!-- Open Graph data -->
+    <meta property="fb:app_id" content="wearefitcharis" />
+    <meta property="og:title" content="Raising and releasing world-class leaders | Fit-Charis International School" />
+    <meta property="og:type" content="school" />
+    <meta property="og:url" content="https://fitcharisschools.com" />
+    <meta property="og:image" content="https://fitcharisschools.com/img/logo.png" />
+    <meta property="og:description" content="Raising and releasing world-class leaders | Fit-Charis International School" />
+    <meta property="og:site_name" content="wearefitcharis" />
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta name="description" content="Raising and releasing world-class leaders | Fit-Charis International School" />
+    <meta name="keywords" content="Books, In vogue, Vogue, PDF, book, soft copies" />
+    <meta property="og:title" content="Raising and releasing world-class leaders | Fit-Charis International School" />
+    <meta property="og:image" content="https://fitcharisschools.com/img/logo.png" />
+    <meta property="og:url" content="https://fitcharisschools.com" />
+    <meta property="og:site_name" content="wearefitcharis" />
+    <meta property="og:description" content="Raising and releasing world-class leaders | Fit-Charis International School" />
+    <meta name="theme-color" content="#ffdd38" />
+
+	<link rel="manifest" href="manifest.json">
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
@@ -116,6 +162,31 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script>
+		if ('serviceWorker' in navigator) {
+		  console.log("Will the service worker register?");
+		  navigator.serviceWorker.register('service-worker.js')
+			.then(function(reg){
+			  console.log("Yes, it did.");
+			}).catch(function(err) {
+			  console.log("No it didn't. This happened: ", err)
+			});
+		}
+	  </script>
+	  <script src="service-worker.js">
+			  // Service worker for Progressive Web App
+		  if ('serviceWorker' in navigator) {
+			  navigator.serviceWorker.register('service-worker.js', {
+				  scope: '.' // THIS IS REQUIRED FOR RUNNING A PROGRESSIVE WEB APP FROM A NON_ROOT PATH
+			  }).then(function(registration) {
+				  // Registration was successful
+				  console.log('ServiceWorker registration successful with scope: ', registration.scope);
+			  }, function(err) {
+				  // registration failed :(
+				  console.log('ServiceWorker registration failed: ', err);
+			  });
+		  }
+	  </script>
 
 </body>
 </html>

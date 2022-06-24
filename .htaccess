@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^fitcharisschools\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://fitcharisschools.com/$1 [R,L]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.fitcharisschools\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.fitcharisschools.com/$1 [R,L]
