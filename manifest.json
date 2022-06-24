@@ -15,9 +15,11 @@
   "theme_color": "#ffdd38",
   "color": "#fff",
   "display": "minimal-ui",
-  "related_applications": [{
-    "platform": "web",
-    "orientation": "portrait",
-    "url": "https://fitcharisschools.com"
-  }]
+  "related_applications": [
+    {
+      "platform": "web",
+      "orientation": "portrait",
+      "url": "https://fitcharisschools.com"
+    }
+  ]
 }
