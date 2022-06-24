@@ -1,0 +1,6 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "com.fitcharisschools.www.twa",
+                     "sha256_cert_fingerprints": ["77:B1:CE:A9:C6:63:DF:A0:7C:C1:D5:2A:B4:C9:63:40:D0:65:66:58:92:88:19:32:BC:CF:0E:61:0C:54:B6:16"] }
+      }
+]
